@@ -21,7 +21,7 @@ if [ -z $OS ]; then
   exit 1
 fi
 
-function download
+download()
 {
   TMP_USED=1
   URL="$REPO_RAW/$1"
