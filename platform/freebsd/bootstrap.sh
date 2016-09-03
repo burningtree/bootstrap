@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PACKAGES="fish vim-lite git tmux wget curl apg aria2 mtr ncdu jq the_silver_searcher"
+PACKAGES="fish vim-lite git tmux wget curl apg aria2 mtr-nox11 ncdu jq the_silver_searcher tree"
 
 # check sudo
 SUDO="/usr/local/bin/sudo"
