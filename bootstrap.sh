@@ -26,7 +26,9 @@ download()
   TMP_USED=1
   URL="$REPO_RAW/$1"
   echo "Downloading: $URL"
-  if [ $OS = "darwin" ]; then
+  if [ $OS = "freebsd" ]; then
+    fetch -o $2 $URL
+  else
     curl -s $URL > $2
   fi
 }
