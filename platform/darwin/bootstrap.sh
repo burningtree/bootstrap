@@ -3,7 +3,7 @@
 REPO_RAW="https://raw.githubusercontent.com/burningtree/bootstrap/master"
 HOMEBREW="/usr/local/bin/brew"
 
-function download
+download()
 {
   TMP_USED=1
   TARGET="/tmp/bootstrap-platform.darwin.$$.sh"
@@ -26,10 +26,8 @@ if [ ! -r $BREWFILE ]; then
   echo "Downloading Brewfile .."
   BREWFILE_LOCAL=`download $BREWFILE`
   BREWFILE=$BREWFILE_LOCAL
-else
-  BREWFILE=`pwd`/$BREWFILE
 fi
 
 echo "Running Brewfile: $BREWFILE"
-$HOMEBREW bundle check --file=$BREWFILE
+#$HOMEBREW bundle check --file=$BREWFILE
 

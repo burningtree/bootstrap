@@ -47,7 +47,8 @@ if [ ! -r $OS_FILE ]; then
   fi
 fi
 
-# RUN PLATFORM BOOTSTRAP
+echo "Running platform bootstrap: $OS_FILE"
+
 /bin/sh $OS_FILE
 
 # CLEAN
