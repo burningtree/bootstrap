@@ -27,13 +27,17 @@ download()
   URL="$REPO_RAW/$1"
   echo "Downloading: $URL"
   if [ $OS = "freebsd" ]; then
-    fetch -o $2 $URL
+    fetch -qo $2 $URL
   else
     curl -s $URL > $2
   fi
 }
 
+echo "-------------------------------"
 echo "Platform: $OS"
+echo "Architecture: `uname -m`"
+echo "Hostname: `hostname`"
+echo "-------------------------------"
 
 OS_FILE="platform/$OS/bootstrap.sh"
 
@@ -54,9 +58,8 @@ echo "Running platform bootstrap: $OS_FILE"
 /bin/sh $OS_FILE
 
 # CLEAN
-if [ ! -n $TMP_USED ]; then
-  echo "Cleaning /tmp .."
-  rm /tmp/bootstrap-platform.*
-fi
+echo "Cleaning .."
+rm /tmp/bootstrap-platform.* 2>/dev/null
 
+echo "Done. Bootstrap complete."
 

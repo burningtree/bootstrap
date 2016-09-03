@@ -17,6 +17,10 @@ echo "Checking Homebrew .."
 if [ ! -f $HOMEBREW ]; then
   echo "Homebrew not installed, installing .. "
   /usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"
+  if [ $? != 0 ]; then
+    echo "Error installing homebrew."
+    exit 1
+  fi
 fi
 
 echo "Homebrew: `brew --version | egrep -o '(\d\.\d\.\d)'` [$HOMEBREW]"
