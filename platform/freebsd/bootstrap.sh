@@ -7,7 +7,7 @@ SUDO="/usr/local/bin/sudo"
 
 if [ ! -x $SUDO ]; then
   echo "Installing sudo .."
-  while ! su -m root -c "pkg install sudo"; do :; done
+  while ! su -m root -c "pkg install --yes --quiet sudo"; do :; done
 fi
 echo "Sudo: $SUDO"
 
