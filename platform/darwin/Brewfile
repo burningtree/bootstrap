@@ -1,0 +1,62 @@
+# add repository
+#tap 'caskroom/cask'
+
+# Packages
+# basic
+brew 'coreutils'
+brew 'curl'
+
+# main shell & tools
+brew 'fish'
+brew 'tmux'
+brew 'vim', args: ['override-system-vi']
+
+# essential
+brew 'ack'                        # grep successor
+brew 'ag'                         # ack successor
+brew 'pv'                         # pipe meter
+brew 'apg'                        # password generator
+brew 'ncdu'                       # disk usage
+brew 'xz'                         # compression
+brew 'tree'                       # tree generator
+brew 'jq'                         # JSON processor
+brew 'multitail'                  # tail hype
+brew 'ranger'                     # file manager
+brew 'pigz'                       # parallel gzip
+brew 'ssh-copy-id'
+
+# development
+brew 'git'
+brew 'tig'                        # git cli browser
+brew 'gist'                       # snippets
+brew 'gh'                         # git+hub wrapper
+#brew 'bfg'                       # git repo cleaner
+#brew 'gibo'                      # gitignore boilerplates
+
+# network
+brew 'curl'                       # newest cURL
+brew 'wget'
+brew 'nmap'                       # security scanner
+brew 'mtr'                        # better traceroute
+brew 'aria2'                      # download utility
+brew 'swaks'                      # SMTP tester
+brew 'spoof-mac'                  # MAC addres spoofing
+brew 'knock'                      # port knocking
+brew 'socat'
+brew 'ngrep'
+brew 'speedtest_cli'              # speedtest
+
+# encryption
+brew 'pass'                       # password manager
+brew 'gnupg2'                     # OpenPGP
+brew 'keybase'                    # Key repository
+
+# security
+brew 'john'                       # cracker
+
+# osx specific
+brew 'terminal-notifier'
+
+# other
+brew 'jrnl'                       # shell notes
+
