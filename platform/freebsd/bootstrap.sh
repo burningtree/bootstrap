@@ -18,4 +18,4 @@ if [ ! "$WHEEL_STATUS" ]; then
 fi
 
 echo "Installing core packages .."
-$SUDO pkg install $PACKAGES
+$SUDO pkg install --yes $PACKAGES
