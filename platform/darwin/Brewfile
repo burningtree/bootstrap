@@ -9,13 +9,12 @@ brew 'curl'
 # main shell & tools
 brew 'fish'
 brew 'tmux'
-brew 'vim', args: ['override-system-vi']
+brew 'vim', args: ['with-override-system-vi']
 
 # essential
 brew 'ack'                        # grep successor
 brew 'ag'                         # ack successor
 brew 'pv'                         # pipe meter
-brew 'apg'                        # password generator
 brew 'ncdu'                       # disk usage
 brew 'xz'                         # compression
 brew 'tree'                       # tree generator
@@ -47,16 +46,24 @@ brew 'ngrep'
 brew 'speedtest_cli'              # speedtest
 
 # encryption
-brew 'pass'                       # password manager
-brew 'gnupg2'                     # OpenPGP
-brew 'keybase'                    # Key repository
 
-# security
+# security & encryption
+brew 'apg'                        # password generator
+brew 'pass'                       # password manager
 brew 'john'                       # cracker
+#brew 'gnupg2'                    # OpenPGP -- deprecated
+#brew 'keybase'                    # Key repository
 
 # osx specific
 brew 'terminal-notifier'
 
+# sysop tools
+brew 'ansible'                    # server orchestrating
+
 # other
 brew 'jrnl'                       # shell notes
+
+# DMG Apps - TODO
+
+# GPGTools
 

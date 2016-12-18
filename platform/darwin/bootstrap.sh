@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REPO_RAW="https://raw.githubusercontent.com/burningtree/bootstrap/master"
+REPO_RAW="https://raw.githubusercontent.com/burningtree/os-bootstrap/master"
 HOMEBREW="/usr/local/bin/brew"
 
 download()
@@ -25,6 +25,10 @@ fi
 
 echo "Homebrew: `brew --version | egrep -o '(\d\.\d\.\d)'` [$HOMEBREW]"
 
+echo "Installing Homebrew/bundle .."
+
+brew tap Homebrew/bundle
+
 BREWFILE="platform/darwin/Brewfile"
 if [ ! -r $BREWFILE ]; then
   echo "Downloading Brewfile .."
@@ -33,5 +37,5 @@ if [ ! -r $BREWFILE ]; then
 fi
 
 echo "Running Brewfile: $BREWFILE"
-#$HOMEBREW bundle check --file=$BREWFILE
+$HOMEBREW bundle -v --file=$BREWFILE
 

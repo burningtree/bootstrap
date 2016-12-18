@@ -1,12 +1,14 @@
 # OS Bootstrap Templates
 
-## Darwin / Linux
-```
-curl -Ls http://s.arnal.cz/bootstrap | sh
-```
-
-## FreeBSD
+## Bootstrapping
+### cURL (Darwin / Linux)
 
 ```
-fetch -qo - http://s.arnal.cz/bootstrap | sh
+curl -Ls http://s.arnal.cz/os-bootstrap | sh
+```
+
+### `fetch` command (BSD)
+
+```
+fetch -qo - http://s.arnal.cz/os-bootstrap | sh
 ```

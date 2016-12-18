@@ -1,7 +1,7 @@
 #!/bin/sh
 
-REPO="git@github.com:burningtree/bootstrap.git"
-REPO_RAW="https://raw.githubusercontent.com/burningtree/bootstrap/master"
+REPO="git@github.com:burningtree/os-bootstrap.git"
+REPO_RAW="https://raw.githubusercontent.com/burningtree/os-bootstrap/master"
 TMP_USED=0
 
 echo "Bootstrap initiated .."
