@@ -42,10 +42,10 @@ $HOMEBREW bundle -v --file=$BREWFILE
 echo "Brewfile done.\n--------"
 
 MASFILE="platform/darwin/Masfile"
-if [ ! -r $BREWFILE ]; then
+if [ ! -r $MASFILE ]; then
   echo "Downloading Masfile .."
-  MASFILE_LOCAL=`download $BREWFILE`
-  MASFILE=$BREWFILE_LOCAL
+  MASFILE_LOCAL=`download $MASFILE`
+  MASFILE=$MASFILE_LOCAL
 fi
 
 echo "Running Masfile: $MASFILE"
