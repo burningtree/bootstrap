@@ -49,6 +49,8 @@ brew 'speedtest_cli'              # speedtest
 brew 'apg'                        # password generator
 brew 'pass'                       # password manager
 brew 'john'                       # cracker
+brew 'sqlmap'                     # sql injection tool
+brew 'hydra'                      # remote pass cracker
 #brew 'gnupg2'                    # OpenPGP -- deprecated
 #brew 'keybase'                    # Key repository
 
@@ -61,6 +63,9 @@ brew 'ansible'                    # server orchestrating
 
 # other
 brew 'jrnl'                       # shell notes
+
+# node.js
+brew 'node'
 
 # DMG Apps - TODO
 
