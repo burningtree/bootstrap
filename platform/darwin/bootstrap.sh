@@ -39,3 +39,8 @@ fi
 echo "Running Brewfile: $BREWFILE"
 $HOMEBREW bundle -v --file=$BREWFILE
 
+echo "Brewfile done.\n--------"
+
+echo "Running Masfile: $MASFILE"
+cat Masfile | sed -e 's/#.*$//' | xargs mas install
+

@@ -52,11 +52,12 @@ brew 'john'                       # cracker
 brew 'sqlmap'                     # sql injection tool
 brew 'hydra'                      # remote pass cracker
 #brew 'gnupg2'                    # OpenPGP -- deprecated
-#brew 'keybase'                    # Key repository
+#brew 'keybase'                   # Key repository
 
 # osx specific
-brew 'm-cli'
-brew 'terminal-notifier'
+brew 'm-cli'                      # Swiss Army Knife for macOS
+brew 'mas'                        # Mac App Store CLI
+brew 'terminal-notifier'                    
 
 # sysop tools
 brew 'ansible'                    # server orchestrating
