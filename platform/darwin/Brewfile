@@ -45,8 +45,6 @@ brew 'socat'
 brew 'ngrep'
 brew 'speedtest_cli'              # speedtest
 
-# encryption
-
 # security & encryption
 brew 'apg'                        # password generator
 brew 'pass'                       # password manager
@@ -55,6 +53,7 @@ brew 'john'                       # cracker
 #brew 'keybase'                    # Key repository
 
 # osx specific
+brew 'm-cli'
 brew 'terminal-notifier'
 
 # sysop tools
