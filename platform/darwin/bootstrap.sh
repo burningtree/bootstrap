@@ -41,6 +41,13 @@ $HOMEBREW bundle -v --file=$BREWFILE
 
 echo "Brewfile done.\n--------"
 
+MASFILE="platform/darwin/Masfile"
+if [ ! -r $BREWFILE ]; then
+  echo "Downloading Masfile .."
+  MASFILE_LOCAL=`download $BREWFILE`
+  MASFILE=$BREWFILE_LOCAL
+fi
+
 echo "Running Masfile: $MASFILE"
 cat Masfile | sed -e 's/#.*$//' | xargs mas install
 
